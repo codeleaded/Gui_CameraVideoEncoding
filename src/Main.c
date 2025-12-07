@@ -27,7 +27,7 @@ void Update(AlxWindow* w){
     Clear(BLACK);
 
     if(Mode==0){
-        Sprite sp = Sprite_None();
+        Sprite sp = Sprite_Null();
         int width = 0,height = 0;
         sp.img = RLCamera_Get(&rlc,&width,&height);
         sp.w = width;
@@ -38,7 +38,7 @@ void Update(AlxWindow* w){
             Sprite_Free(&sp);
         }
     }else if(Mode==1){
-        Sprite sp = Sprite_None();
+        Sprite sp = Sprite_Null();
         int width = 0,height = 0;
         sp.img = RLCamera_Get(&rlc,&width,&height);
         sp.w = width;
